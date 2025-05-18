@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Future-Proof Careers", layout="wide")
 
-# Load data
+# Load data (no subfolder)
 df_bls = pd.read_csv("bls_job_outlook.csv")
 df_remote = pd.read_csv("remote_jobs.csv")
 df_salary = pd.read_csv("levels_fyi_salaries.csv")
