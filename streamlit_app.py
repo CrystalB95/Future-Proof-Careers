@@ -6,9 +6,12 @@ import matplotlib.pyplot as plt
 st.set_page_config(page_title="Future-Proof Careers", layout="wide")
 
 # Load data
+import pandas as pd
+
+# ✅ Correct file paths using subfolder
 df_bls = pd.read_csv("data/bls_job_outlook.csv")
-df_salary = pd.read_csv("data/levels_fyi_salaries.csv")
 df_remote = pd.read_csv("data/remote_jobs.csv")
+df_salary = pd.read_csv("data/levels_fyi_salaries.csv")
 df_skills = pd.read_csv("data/job_skills.csv")
 
 st.title("🔮 Future-Proof Careers: Remote, High-Growth, and High-Paying")
